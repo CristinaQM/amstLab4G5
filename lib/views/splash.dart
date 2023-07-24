@@ -45,7 +45,7 @@ class _SplashView extends State<SplashView> {
               width: Util.sizeScreen(context: context).width * 0.40,
               height: Util.sizeScreen(context: context).width * 0.40,
               child: const Icon(
-                Icons.shopping_cart,
+                Icons.cake,
                 color: AppColors.text_dark,
                 size: 150,
               ),

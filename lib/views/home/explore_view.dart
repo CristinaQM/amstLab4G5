@@ -5,6 +5,7 @@ import 'package:g5amst/constants/colors.dart';
 import 'package:g5amst/models/filter_chip.dart';
 import 'package:g5amst/models/product.dart';
 import 'package:g5amst/utils/info.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class Explore extends StatefulWidget {
   const Explore({Key? key}) : super(key: key);
@@ -39,11 +40,27 @@ class _Explore extends State<Explore> {
     return Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
-        child: Wrap(runSpacing: 5, spacing: 15, children: _buildFilterChips()),
+        child: Wrap(
+          runSpacing: 5,
+          spacing: 15,
+          children: _buildFilterChips(),
+        ),
+      ),
+      Padding(
+        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+        child: LinearPercentIndicator(
+          barRadius: const Radius.circular(15),
+          animation: true,
+          animationDuration: 1000,
+          progressColor: AppColors.pink,
+          leading: const Text('Time left'),
+          lineHeight: 20,
+          percent: 0.8,
+        ),
       ),
       Expanded(
           child: GridView.builder(
-        padding: const EdgeInsets.only(left: 15),
+        padding: const EdgeInsets.only(left: 15, bottom: 15),
         itemCount: promos.length,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -82,7 +99,7 @@ class ItemCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          height: 180,
+          height: 150,
           width: 180,
           decoration: BoxDecoration(
             color: product.color,

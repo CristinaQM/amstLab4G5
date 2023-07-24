@@ -6,8 +6,8 @@ class FilterChipData {
 }
 
 List<FilterChipData> categories = [
-  FilterChipData("Shirts", false),
-  FilterChipData("Pants", false),
-  FilterChipData("Shoes", false),
-  FilterChipData("Watchs", false),
+  FilterChipData("Cakes", false),
+  FilterChipData("Cupcakes", false),
+  FilterChipData("Macaroon", false),
+  FilterChipData("Cakepops", false),
 ];

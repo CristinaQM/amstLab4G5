@@ -54,12 +54,12 @@ class _ForYouView extends State<ForYouView> {
         _promo(),
         Padding(
           padding: EdgeInsets.all(10),
-          child: Text("Shirts", style: TextStyle(color: AppColors.text_light, fontSize: 30, fontWeight: FontWeight.bold)),
+          child: Text("Specials", style: TextStyle(color: AppColors.text_light, fontSize: 30, fontWeight: FontWeight.bold)),
         ),
         _shirts(),
         Padding(
           padding: EdgeInsets.all(10),
-          child: Text("Pants", style: TextStyle(color: AppColors.text_light, fontSize: 30, fontWeight: FontWeight.bold)),
+          child: Text("Season", style: TextStyle(color: AppColors.text_light, fontSize: 30, fontWeight: FontWeight.bold)),
         ),
         _pants(),
       ],

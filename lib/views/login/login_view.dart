@@ -47,7 +47,7 @@ class _LoginView extends State<LoginView> {
               children: [
                 Container(height: 300),
                 const Text(
-                  "EcommerceApp",
+                  "DessertApp",
                   style: TextStyle(
                     fontSize: 36,
                     fontWeight: FontWeight.bold,
@@ -67,7 +67,7 @@ class _LoginView extends State<LoginView> {
                 ),
                 Container(height: 8),
                 const Text(
-                  "Aplicación de ejemplo para el laboratorio",
+                  "Aplicación de desafío para el laboratorio",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.white,
